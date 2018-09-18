@@ -4,10 +4,13 @@
 %   http://blog.csdn.net/xueshengke/article/details/51996265
 %=================================================================%
 \documentclass[UTF8,a4paper,10pt]{article}
-\usepackage{ctex}
+\usepackage{xeCJK}
 \usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
-\usepackage{mathbbold}
-\usepackage{CJK,CJKnumb}
+%\usepackage{mathbbold}
+\usepackage{mathpazo} % Use the Palatino font by default
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+%\usepackage{CJK,CJKnumb}
 \usepackage{indentfirst}        %首行缩进宏包
 \usepackage{latexsym,bm}        % 处理数学公式中和黑斜体的宏包
 \usepackage{amsmath,amssymb}    % AMSLaTeX宏包 用来排出更加漂亮的公式
@@ -53,7 +56,7 @@
 \setlength{\belowdisplayskip}{6pt plus1pt minus1pt}     %公式后面的距离
 \setlength{\arraycolsep}{2pt}   %在一个array中列之间的空白长度, 因为原来的太宽了
 \allowdisplaybreaks[4]          % \eqnarray如果很长，影响分栏、换行和分页（整块挪动，造成页面空白），可以设置成为自动调整模式
-\CJKtilde                       %用于解决英文字母和汉字的间距问题。例如：变量~$x$~的值。
+%\CJKtilde                       %用于解决英文字母和汉字的间距问题。例如：变量~$x$~的值。
 \renewcommand{\CJKglue}{\hskip 0pt plus 0.08\baselineskip}%它于必要时在汉字之间插入一个附加的空隙，以解决行的超长问题。
 
 %\numberwithin{equation}{section}
@@ -71,13 +74,18 @@
 \author{你的名字}
 \date{\today}
 \maketitle{}
-\tableofcontents
-
 \begin{abstract}
-  哈哈哈
-\end{abstract}
-\newpage
+	哈哈哈
+	
+\centering
+\textbf{Keywords:} Abstract, \LaTeXe, English
 
+\end{abstract}
+
+
+
+\newpage
+\tableofcontents
 
 \section{哈哈哈}
 是色弱的
